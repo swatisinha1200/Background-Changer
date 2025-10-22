@@ -1,5 +1,5 @@
 import React from 'react'
- import { BackgroundChange } from './component/Background color changer/BackgroundChange'
+import { BackgroundChange } from './Component/Background';
 const App = () => {
   return (
     <div>

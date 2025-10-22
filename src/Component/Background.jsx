@@ -1,18 +1,19 @@
+import React from 'react'
 import { useState } from "react";
 import "./Background.css";
-export function BackgroundChange(){
+export const Background = () => {
     const [color,setColor]=useState("");
-    color && (document.body.style.backgroundColor=color);
-//     // ...existing code...
-// if (color) {
-//   document.body.style.backgroundColor = color;
-// }
-//     const changeBackground = (color) => {
-//     setColor(color);
-//     document.body.style.backgroundColor = color;
-//   };
-    return(
-        <div className="container">
+        color && (document.body.style.backgroundColor=color);
+    //     // ...existing code...
+    // if (color) {
+    //   document.body.style.backgroundColor = color;
+    // }
+    //     const changeBackground = (color) => {
+    //     setColor(color);
+    //     document.body.style.backgroundColor = color;
+    //   };
+  return (
+  <div className="container">
         <div className="box" >
             <h1>Background color changer</h1>
         <button  className="bt1" onClick={()=>{setColor("red")}}></button>
@@ -23,5 +24,6 @@ export function BackgroundChange(){
         <button className="bt6" onClick={()=>{setColor("rgb(20, 144, 221)")}}></button>
         </div>
         </div>
-    );
+)
 }
+
