@@ -1,9 +1,9 @@
 import React from 'react'
-import { BackgroundChange } from './Component/Background';
+import { Background } from './Component/Background';
 const App = () => {
   return (
     <div>
-    <BackgroundChange/>
+    <Background/>
     </div>
   )
 }
